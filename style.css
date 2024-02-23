@@ -24,7 +24,7 @@ nav {
 
   background: transparent;
   margin-top: 5px;
- 
+ z-index:1;
 
 }
 

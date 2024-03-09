@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap');
+
 *{
   color: #f1f1f1;
   font-family: 'Montserrat', sans-serif;
@@ -94,6 +95,11 @@ nav div a span {
   color: #000 !important;
   border-radius: 5px;
 }
+.main_hero{
+  height: 1700vh;
+  width: 100%;
+  background: linear-gradient(#000,#757575ac);
+}
 
 .hfull {
 
@@ -110,7 +116,41 @@ nav div a span {
   height: 100vh;
   width: 100%;
 }
-
+.sun{
+  position: relative;
+  /* width: 100px; */
+  /* height: 100vh; */
+  /* background-color: #0ff; */
+}
+:root{
+  --violet: violet;
+  --blue: #0ff;
+} 
+.sun::before{
+  content: "";
+  position: absolute;
+  top: -250px;
+  left: -120px;
+  /* transform: translateY(-40%,-0%); */
+  /* display: block; */
+  animation:spin 4s linear infinite;
+  background-blend-mode: color;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 140px;
+    border-radius: 50%;
+    box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 60px var(--violet),
+        inset -20px 0 60px var(--blue),
+        inset 20px 0 300px var(--violet),
+        inset -20px 0 300px var(--blue),
+          0 0 50px #fff,
+          -10px 0 60px   var(--violet),
+          10px 0 60px var(--blue);
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 
 /* footer */
@@ -240,4 +280,10 @@ footer .wave#wave4{
   footer > .social_icon{
     bottom: -30px;
   }
-}
+  /* #h-img img {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-80%, -50%)
+  }*/
+} 

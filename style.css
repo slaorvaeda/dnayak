@@ -213,18 +213,24 @@ footer .wave{
   background-size: 1000px 200px;
  
 }
+
+
 footer .wave#wave1{
   z-index: 1000;
   opacity: 1;
   bottom: 0;
   animation: animewave 4s linear infinite;
 }
+
+
 footer .wave#wave2{
   z-index: 999;
   opacity: 0.5;
   bottom: 10px;
   animation: animewaveee 4s linear infinite;
 }
+
+
 
 footer .wave#wave3{
   z-index: 1000;
